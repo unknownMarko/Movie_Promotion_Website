@@ -1,146 +1,40 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-@font-face {
-    font-family: 'AachenBold';
-    src: url('../fonts/aachen-bold.ttf') format('truetype');
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Busorama';
-    src: url('../fonts/busorama.ttf') format('truetype');
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Benguiat';
-    src: url('../fonts/benguiat.ttf') format('truetype');
-    font-display: swap;
-}
-
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #222;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-body.home {
     background: url('../images/pulp-fiction-bg.webp') center/cover no-repeat fixed;
     position: relative;
     min-height: 100vh;
 }
 
-body.home::before {
+body::before {
     content: '';
     position: absolute;
     inset: 0;
     background: rgba(0, 0, 0, 0.6);
 }
 
-a {
-    color: #fff;
-    text-decoration: none;
-}
-
-ul {
-    list-style: none;
-}
-
-.page-wrapper {
-    flex: 1;
+.hero-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100vh;
+    text-align: center;
     position: relative;
     z-index: 1;
 }
 
-.hero {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 1rem;
-}
-
-.hero h1 {
+.hero-title {
     font-family: 'AachenBold', Arial, sans-serif;
     color: #faaa00;
-    font-size: 4rem;
-    margin-bottom: 1rem;
-    letter-spacing: 2px;
-    text-transform: uppercase;
     text-shadow: 0 6px 0 #bf0101;
 }
 
-.hero p {
+.hero-subtitle {
     font-family: 'Busorama', Arial, sans-serif;
     color: #fbba01;
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
-    letter-spacing: 1px;
-}
-
-.hero nav {
-    font-family: 'Benguiat', Arial, sans-serif;
-    width: 100%;
-}
-
-.hero nav ul {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.hero nav li {
-    margin: 0 1rem;
-}
-
-.hero nav a {
-    font-size: 1.5rem;
-    letter-spacing: 0.2rem;
-    font-weight: bold;
-    padding: 0.5rem 1rem;
-}
-
-.hero nav a:hover {
-    color: #db7d2f;
-    transition: color 0.5s ease;
 }
 
 footer {
-    padding: 1rem;
-    color: grey;
-    text-align: center;
+    position: absolute;
+    bottom: 0;
     width: 100%;
-    position: relative;
-    z-index: 1;
-}
-
-@media (max-width: 768px) {
-    .hero h1 {
-        font-size: 2.5rem;
-    }
-
-    .hero p {
-        font-size: 1.2rem;
-    }
-
-    .hero nav ul {
-        flex-direction: column;
-    }
-
-    .hero nav li {
-        margin: 0.5rem 0;
-    }
 }

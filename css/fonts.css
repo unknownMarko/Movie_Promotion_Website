@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'AachenBold';
+    src: url('../fonts/aachen-bold.ttf') format('truetype');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Busorama';
+    src: url('../fonts/busorama.ttf') format('truetype');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Benguiat';
+    src: url('../fonts/benguiat.ttf') format('truetype');
+    font-display: swap;
+}
