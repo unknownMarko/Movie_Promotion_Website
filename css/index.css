@@ -1,5 +1,5 @@
 body {
-    background: url('https://unknownmarko.github.io/Movie_Promotion_Website/images/pulp-fiction-bg.webp') center/cover no-repeat fixed;
+    background: url('images/pulp-fiction-bg.webp') center/cover no-repeat fixed;
     position: relative;
     min-height: 100vh;
 }
